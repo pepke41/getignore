@@ -1,0 +1,30 @@
+{
+  "name": "getignore",
+  "version": "1.0.0",
+  "description": "Download gitignore files from Github's repository",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel src/ -d lib/ ",
+    "start": "node ./lib/lib.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run compile"
+  },
+  "main": "./lib/index.js",
+  "bin": {
+    "getignore": "./lib/lib.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-eslint": "^5.0.0",
+    "babel-plugin-syntax-async-functions": "^6.5.0",
+    "babel-plugin-transform-async-to-generator": "^6.5.0",
+    "babel-plugin-transform-runtime": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0"
+  },
+  "dependencies": {
+    "node-fetch": "^1.3.3"
+  }
+}
